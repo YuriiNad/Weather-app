@@ -1,0 +1,85 @@
+$back-gr: #8b919d;
+$btn-subm-how: #cfc4c2;
+$btn-bec: #a2a5ad;
+$but-bor: #B4B4B4 ;
+$form-text: #4a494e;
+
+.weather-search-container {
+  background-color: $back-gr;
+  overflow: hidden
+}
+
+.form-container { 
+  font-family:'Roboto';
+  width:500px; 
+  display:block; 
+  background:inherit;
+  padding:25px 20px;
+  // border: 2px solid blue; // WILL BE REMOVED
+
+  /* form starting stylings ------------------------------- */
+  .form-input { 
+    position:relative; 
+    // border: 2px solid red; // WILL BE REMOVED
+    width: 100%;
+
+    input {
+      font-size:18px;
+      padding:10px 10px 10px 5px;
+      display:block;
+      width:100%;
+      border:none;
+      border-bottom:1px solid #757575;
+      border-radius: 4px;
+      background-color: $btn-bec;
+    }
+    
+    input:focus { 
+      outline:none; 
+    }
+    
+    /* LABEL ======================================= */
+    label {
+      color: #4a494e; 
+      font-size:18px;
+      font-weight:normal;
+      position:absolute;
+      pointer-events:none;
+      left:5px;
+      top:10px;
+      transition:0.2s ease all; 
+      -moz-transition:0.2s ease all; 
+      -webkit-transition:0.2s ease all;
+    }
+    
+    /* active state */
+    input:focus ~ label, input:valid ~ label {
+      top:-20px;
+      font-size:14px;
+      color:$form-text;
+    }
+  }
+
+  .form-bnt-submit {
+    width: 100%;
+    justify-content: start;
+    margin-top: 20px;
+    height: 90px;
+    // border: 2px solid green; // WILL BE REMOVED
+
+  }
+
+  .weather-option {
+    margin-top: 20px;
+    width: 100%;
+    // border: 2px solid orange; // WILL BE REMOVED
+    justify-content: start;
+    
+    .option-two {
+      margin-left: 107px;
+    };
+  };
+}
+
+
+

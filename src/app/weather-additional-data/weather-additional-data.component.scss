@@ -1,0 +1,15 @@
+$back-gr: #8b919d;
+$text_color: #4a494e;
+$border_color: #b1a6a4; 
+
+.additional-city-weather {
+    height: 200px;
+    width: 225px;
+    color: $text_color;
+    border-left: 2px solid $border_color;
+    font-size: 22px;
+
+    .city-pressure {
+        margin-top: 5px;
+    }
+}

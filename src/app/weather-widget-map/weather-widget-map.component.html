@@ -1,0 +1,15 @@
+
+ <div class="weather-widget-container center-aligned-c">
+    <div class="current-weather-data center-aligned-r">
+      <weather-data [currentCityWeather]="currentCityWeather"></weather-data>
+      <city-map ></city-map>
+        
+    </div>
+    
+    <div class="center-aligned-r navigation-date">
+        <button class="comm-btn" (click)='back()'>Back</button>
+        <div class="date-time-align">
+            <date-time></date-time>
+        </div>
+    </div>
+</div>

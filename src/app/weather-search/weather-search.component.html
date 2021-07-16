@@ -1,0 +1,17 @@
+<div class="weather-search-container">
+  <div class="form-container">
+    <form class="center-aligned-c">
+      <div class="form-input">
+        <input type="text" required #cityName>
+        <label>City name</label>
+      </div>
+      <div class="form-bnt-submit center-aligned-r">
+        <button class="sbmt-btn" (click)="submit(cityName.value)">Submit</button>
+      </div>
+    </form>
+    <div class="weather-option center-aligned-r">
+      <button class="comm-btn option-one"(click)='redirect(1)' [disabled]='!isDisabled' [ngClass]="{'disabled': isDisabled==false}">Option 1</button>
+      <button class="comm-btn option-two"(click)='redirect(2)' [disabled]='!isDisabled' [ngClass]="{'disabled': isDisabled==false}">Option 2</button>
+    </div>
+  </div>
+</div>
