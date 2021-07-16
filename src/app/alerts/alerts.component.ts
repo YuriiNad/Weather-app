@@ -17,7 +17,7 @@ export class AlertsComponent implements OnInit {
     Swal.fire({  
       icon: 'error',  
       title: 'Something went wrong!',  
-      text: 'Input is empty, or incorrect city name!',  
+      text: 'Input is empty, or incorrect city name! Please try again!',  
       allowOutsideClick: false,
       confirmButtonColor: "#F27474",
     })
