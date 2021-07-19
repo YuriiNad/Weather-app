@@ -1,14 +1,14 @@
-<div class="weather-data-map-container center-aligned-c"> 
-    <div class="main-city-weather center-aligned-c">
-        <div class="city-name-index center-aligned-c">
+<div class='weather-data-map-container center-aligned-c'>
+    <div class='main-city-weather center-aligned-c'>
+        <div class='city-name-index center-aligned-c'>
             <span><b>{{currentCityWeather.countryIndex}}</b></span>
-            <div class="name-index">
-                <h4>{{currentCityWeather.cityName}}</h4> 
+            <div class='name-index'>
+                <h4>{{currentCityWeather.cityName}}</h4>
             </div>
         </div>
-        <p class="city-temperature">{{currentCityWeather.cityTemperature  | number:'1.0-0'}} °C</p>
-        <div class="img-container">
-            <img class="city-icon" [src]="currentCityWeather.weatherIcon" />
+        <p class='city-temperature'>{{currentCityWeather.cityTemperature | number:'1.0-0'}} °C</p>
+        <div class='img-container'>
+            <img class='city-icon' [src]='currentCityWeather.weatherIcon'/>
         </div>
     </div>
 </div>

@@ -11,10 +11,7 @@ export class WeatherDataComponent implements OnInit {
   @Input() currentCityWeather!: WeatherItem;
   weatherIcon: any;
 
-  constructor () { 
-  }
+  constructor () {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

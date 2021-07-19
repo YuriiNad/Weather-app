@@ -12,7 +12,7 @@ import { WeatherService } from '../weather.service';
 
 export class WeatherSearchComponent implements OnInit {
   public isDisabled = true;
-  constructor(private _weatherServise: WeatherService, private router: Router) { }
+  constructor(private _weatherServise: WeatherService, private router: Router) {}
 
   submit(cityName:string) {
     this._weatherServise.searchWeatherData(cityName)
@@ -26,6 +26,5 @@ export class WeatherSearchComponent implements OnInit {
     this.router.navigateByUrl(url);
   }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 }

@@ -3,17 +3,17 @@ $text_color: #4a494e;
 $border_color: #b1a6a4; 
 
 .additional-city-weather {
-    height: 200px;
-    width: 225px;
-    color: $text_color;
-    border-left: 2px solid $border_color;
-    font-size: 20px;
+  height: 200px;
+  width: 225px;
+  color: $text_color;
+  border-left: 2px solid $border_color;
+  font-size: 20px;
 
-    .city-pressure {
-        margin-top: 5px;
-    }
+  .city-pressure {
+    margin-top: 5px;
+  }
 
-    .city-weather-description {
-        text-align: center;
-    }
+  .city-weather-description {
+    text-align: center;
+  }
 }

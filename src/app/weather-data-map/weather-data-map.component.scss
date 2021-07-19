@@ -4,44 +4,41 @@ $border_color: #b1a6a4;
 
 
 .weather-widget-map-container {
-    color: $text_color;
-    min-width: 450px;
-    height: 200px;
-    font-size: 25px;
+  color: $text_color;
+  min-width: 450px;
+  height: 200px;
+  font-size: 25px;
 
+  .main-city-weather {
+    position: relative;
+    height: 100%;
+    width: 50%;
+    background-color: $back-gr;
+    border: 2px solid blue;
+  
+    .img-container {
+      margin-bottom: -10px;
+      margin-top: -15px;
 
-    .main-city-weather {
-        position: relative;
-        height: 100%;
-        width: 50%;
-        background-color: $back-gr;
-        border: 2px solid blue; CAN BE REMOVED
-    
-        .img-container {
-            margin-bottom: -10px;
-            margin-top: -15px;
-    
-            .city-icon {
-                display: block;
-                width: 80px;
-                height: 80px;
-            }
-        }
-    
-        .city-temperature {
-            margin-top: 15px;
-                        
-        }
-        span {
-            font-size: 20px;
-            position: absolute;
-            top: 8px;
-            right: 8px;
-        }
-    
-        .city-name-index {
-            margin-top: 10px;
-        }
+      .city-icon {
+        display: block;
+        width: 80px;
+        height: 80px;
+      }
     }
-    
+  
+    .city-temperature {
+      margin-top: 15px;            
+    }
+    span {
+      font-size: 20px;
+      position: absolute;
+      top: 8px;
+      right: 8px;
+    }
+  
+    .city-name-index {
+      margin-top: 10px;
+    }
+  }  
 }

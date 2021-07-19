@@ -11,7 +11,6 @@ import { WeatherService } from '../weather.service';
 })
 
 export class CityMapComponent implements OnInit {
-
   currentWeather: any;
   constructor(private _weatherServise: WeatherService) { }
 
@@ -20,8 +19,6 @@ export class CityMapComponent implements OnInit {
 
     let loader = new Loader({
       apiKey: 'AIzaSyCawDz-TKGdLqMk-N7zZKrZRJxpfZKU32k',
-      // language: 'en',
-      
     });
 
     loader.load().then(() => {
@@ -32,144 +29,144 @@ export class CityMapComponent implements OnInit {
         draggable: false,
         styles: [
           {
-            "stylers": [
+            'stylers': [
               {
-                "saturation": -45
+                'saturation': -45
               },
               {
-                "lightness": 13
+                'lightness': 13
               }
             ]
           },
           {
-            "featureType": "road.highway",
-            "elementType": "geometry.fill",
-            "stylers": [
+            'featureType': 'road.highway',
+            'elementType': 'geometry.fill',
+            'stylers': [
               {
-                "color": "#8fa7b3"
+                'color': '#8fa7b3'
               }
             ]
           },
           {
-            "featureType": "road.highway",
-            "elementType": "geometry.stroke",
-            "stylers": [
+            'featureType': 'road.highway',
+            'elementType': 'geometry.stroke',
+            'stylers': [
               {
-                "color": "#667780"
+                'color': '#667780'
               }
             ]
           },
           {
-            "featureType": "road.highway",
-            "elementType": "labels.text.fill",
-            "stylers": [
+            'featureType': 'road.highway',
+            'elementType': 'labels.text.fill',
+            'stylers': [
               {
-                "color": "#333333"
+                'color': '#333333'
               }
             ]
           },
           {
-            "featureType": "road.highway",
-            "elementType": "labels.text.stroke",
-            "stylers": [
+            'featureType': 'road.highway',
+            'elementType': 'labels.text.stroke',
+            'stylers': [
               {
-                "color": "#8fa7b3"
+                'color': '#8fa7b3'
               },
               {
-                "gamma": 2
+                'gamma': 2
               }
             ]
           },
           {
-            "featureType": "road.arterial",
-            "elementType": "geometry.fill",
-            "stylers": [
+            'featureType': 'road.arterial',
+            'elementType': 'geometry.fill',
+            'stylers': [
               {
-                "color": "#a3becc"
+                'color': '#a3becc'
               }
             ]
           },
           {
-            "featureType": "road.arterial",
-            "elementType": "geometry.stroke",
-            "stylers": [
+            'featureType': 'road.arterial',
+            'elementType': 'geometry.stroke',
+            'stylers': [
               {
-                "color": "#7a8f99"
+                'color': '#7a8f99'
               }
             ]
           },
           {
-            "featureType": "road.arterial",
-            "elementType": "labels.text.fill",
-            "stylers": [
+            'featureType': 'road.arterial',
+            'elementType': 'labels.text.fill',
+            'stylers': [
               {
-                "color": "#555555"
+                'color': '#555555'
               }
             ]
           },
           {
-            "featureType": "road.local",
-            "elementType": "geometry.fill",
-            "stylers": [
+            'featureType': 'road.local',
+            'elementType': 'geometry.fill',
+            'stylers': [
               {
-                "color": "#a3becc"
+                'color': '#a3becc'
               }
             ]
           },
           {
-            "featureType": "road.local",
-            "elementType": "geometry.stroke",
-            "stylers": [
+            'featureType': 'road.local',
+            'elementType': 'geometry.stroke',
+            'stylers': [
               {
-                "color": "#7a8f99"
+                'color': '#7a8f99'
               }
             ]
           },
           {
-            "featureType": "road.local",
-            "elementType": "labels.text.fill",
-            "stylers": [
+            'featureType': 'road.local',
+            'elementType': 'labels.text.fill',
+            'stylers': [
               {
-                "color": "#555555"
+                'color': '#555555'
               }
             ]
           },
           {
-            "featureType": "water",
-            "elementType": "geometry.fill",
-            "stylers": [
+            'featureType': 'water',
+            'elementType': 'geometry.fill',
+            'stylers': [
               {
-                "color": "#bbd9e9"
+                'color': '#bbd9e9'
               }
             ]
           },
           {
-            "featureType": "administrative",
-            "elementType": "labels.text.fill",
-            "stylers": [
+            'featureType': 'administrative',
+            'elementType': 'labels.text.fill',
+            'stylers': [
               {
-                "color": "#525f66"
+                'color': '#525f66'
               }
             ]
           },
           {
-            "featureType": "transit",
-            "elementType": "labels.text.stroke",
-            "stylers": [
+            'featureType': 'transit',
+            'elementType': 'labels.text.stroke',
+            'stylers': [
               {
-                "color": "#bbd9e9"
+                'color': '#bbd9e9'
               },
               {
-                "gamma": 2
+                'gamma': 2
               }
             ]
           },
           {
-            "featureType": "transit.line",
-            "elementType": "geometry.fill",
-            "stylers": [
+            'featureType': 'transit.line',
+            'elementType': 'geometry.fill',
+            'stylers': [
               {
-                "color": "#a3aeb5"
+                'color': '#a3aeb5'
               }
             ]
           }

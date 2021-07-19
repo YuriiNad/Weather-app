@@ -5,12 +5,11 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './date-time.component.html',
   styleUrls: ['./date-time.component.scss']
 })
+
 export class DateTimeComponent implements OnInit {
   public date: any = new Date()
-  constructor() { 
-  }
+  
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

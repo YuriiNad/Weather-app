@@ -1,16 +1,16 @@
 $text_color: #4a494e;
 
 .date-time-container {
-    width: 150px;
-    height: 100px;
+  width: 150px;
+  height: 100px;
 
-    .date {
-        margin-top: 20px;
-    }
+  .date {
+    margin-top: 20px;
+  }
 
-    p {
-        color: $text_color;
-        font-size: 20px;
-        font-style: italic;
-    }
+  p {
+    color: $text_color;
+    font-size: 20px;
+    font-style: italic;
+  }
 }

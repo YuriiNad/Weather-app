@@ -15,12 +15,10 @@ $form-text: #4a494e;
   display:block; 
   background:inherit;
   padding:25px 20px;
-  // border: 2px solid blue; // WILL BE REMOVED
 
   /* form starting stylings ------------------------------- */
   .form-input { 
     position:relative; 
-    // border: 2px solid red; // WILL BE REMOVED
     width: 100%;
 
     input {
@@ -65,21 +63,18 @@ $form-text: #4a494e;
     justify-content: start;
     margin-top: 20px;
     height: 90px;
-    // border: 2px solid green; // WILL BE REMOVED
-
   }
 
   .weather-option {
     margin-top: 20px;
     width: 100%;
-    // border: 2px solid orange; // WILL BE REMOVED
     justify-content: start;
     
     .option-two {
       margin-left: 107px;
     };
   };
-}
+};
 
 
 
