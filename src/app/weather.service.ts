@@ -1,4 +1,6 @@
 import { Injectable } from '@angular/core';
+import { catchError } from 'rxjs/operators';
+import { map } from 'rxjs/operators';
 
 import {  HttpClient} from '@angular/common/http';
 import { WeatherItem } from './weather-item';
@@ -18,30 +20,34 @@ export class WeatherService {
   constructor(private _http: HttpClient, private _alerts:AlertsComponent) {}
 
 
-  searchWeatherData(cityName: string): Object {
+  searchWeatherData(cityName: string): any {
     return this._http.get(`http://api.openweathermap.org/data/2.5/weather?q=${cityName}${this.appId}&units=metric`)
-    .subscribe((data:any)=> {
-      this.currentCityWeather = {
-        cityName: data.name,
-        countryIndex: data.sys["country"],
-        cityTemperature:data.main["temp"],
-        weatherIcon: `https://openweathermap.org/img/wn/${data.weather[0]["icon"]}@2x.png`,
-        weatherDescription: data.weather[0]["description"],
-        cityPressure: data.main["pressure"],
-        cityFeelsLike: data.main["feels_like"],
-        cityHumidity: data.main["humidity"],
-        cityLat: data.coord["lat"],
-        cityLng: data.coord["lon"],
-      };
-      this.isDisabled = true;
-    },
-    (error: any): any => {
-      console.log(error);
-      this.getAlert()
-      this.isDisabled = error.ok
-    })
+    .pipe (
+      catchError(error=> {
+        this.getAlert()
+        return error;
+      }),
+      map((data:any)=> {
+        this.currentCityWeather = {
+          cityName: data.name,
+          countryIndex: data.sys["country"],
+          cityTemperature:data.main["temp"],
+          weatherIcon: `https://openweathermap.org/img/wn/${data.weather[0]["icon"]}@2x.png`,
+          weatherDescription: data.weather[0]["description"],
+          cityPressure: data.main["pressure"],
+          cityFeelsLike: data.main["feels_like"],
+          cityHumidity: data.main["humidity"],
+          cityLat: data.coord["lat"],
+          cityLng: data.coord["lon"],
+        };
+      })
+    )
   }
-
+      // (error: any): any => {
+      //   console.log(error);
+      //   this.getAlert()
+      //   this.isDisabled = error.ok
+      // })
   get currentWeather() {
     return this.currentCityWeather;
   }

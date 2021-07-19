@@ -11,15 +11,14 @@ import { WeatherService } from '../weather.service';
 })
 
 export class WeatherSearchComponent implements OnInit {
-  public isDisabled = false;
+  public isDisabled = true;
   constructor(private _weatherServise: WeatherService, private router: Router) { }
 
   submit(cityName:string) {
-    this._weatherServise.searchWeatherData(cityName);
-
-    setTimeout(():void => {
-      this.isDisabled = this._weatherServise.isDisabled;
-    }, 300);
+    this._weatherServise.searchWeatherData(cityName)
+    .subscribe(() => {
+     this.isDisabled = false
+    })
   }
 
   redirect(option: number): void {

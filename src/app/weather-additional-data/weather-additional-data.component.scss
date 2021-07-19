@@ -7,9 +7,13 @@ $border_color: #b1a6a4;
     width: 225px;
     color: $text_color;
     border-left: 2px solid $border_color;
-    font-size: 22px;
+    font-size: 20px;
 
     .city-pressure {
         margin-top: 5px;
+    }
+
+    .city-weather-description {
+        text-align: center;
     }
 }
