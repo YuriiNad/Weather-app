@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { WeatherItem } from '../weather-item';
+import { WeatherItem } from '../../weather-item';
 
 @Component({
   selector: 'weather-data',

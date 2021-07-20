@@ -1,19 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
-import { WeatherService } from '../weather.service';
+import { WeatherService } from '../../Services/weather.service';
 
 @Component({
-  selector: 'weather-widget-map',
-  templateUrl: './weather-widget-map.component.html',
-  styleUrls: ['./weather-widget-map.component.scss']
+  selector: 'weather-widget',
+  templateUrl: './weather-widget.component.html', 
+  styleUrls: ['./weather-widget.component.scss']
 })
 
-export class WeatherWidgetMapComponent implements OnInit {
+export class WeatherWidgetComponent implements OnInit {
   currentCityWeather: any;
 
   constructor(private _weatherServise: WeatherService, private _router: Router) {}
-
+  
   ngOnInit(): void {
     this.currentCityWeather = this._weatherServise.currentWeather
   }

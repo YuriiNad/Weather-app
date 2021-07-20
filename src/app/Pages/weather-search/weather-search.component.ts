@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
-import { WeatherService } from '../weather.service';
+import { WeatherService } from '../../Services/weather.service';
 
 
 @Component({

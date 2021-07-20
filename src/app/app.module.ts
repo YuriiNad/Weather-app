@@ -7,17 +7,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 
-import { WeatherSearchComponent } from './weather-search/weather-search.component';
-import { WeatherWidgetComponent } from './weather-widget/weather-widget.component';
-import { DateTimeComponent } from './date-time/date-time.component';
-import { WeatherDataComponent } from './weather-data/weather-data.component';
-import { PercentagePipe } from './pipelines/percentage.pipe';
-import { FrirstLatUpperPipe } from './pipelines/frirst-lat-upper.pipe';
-import { AlertsComponent } from './alerts/alerts.component';
-import { WeatherWidgetMapComponent } from './weather-widget-map/weather-widget-map.component';
-import { WeatherDataMapComponent } from './weather-data-map/weather-data-map.component';
-import { WeatherAdditionalDataComponent } from './weather-additional-data/weather-additional-data.component';
-import { CityMapComponent } from './city-map/city-map.component';
+import { WeatherSearchComponent } from './Pages/weather-search/weather-search.component';
+import { WeatherWidgetComponent } from './Pages/weather-widget/weather-widget.component';
+
+import { DateTimeComponent } from '../app/Components/date-time/date-time.component'
+import { WeatherDataComponent } from '../app/Components/weather-data/weather-data.component';
+import { PercentagePipe } from './Pipelines/percentage.pipe';
+import { FrirstLatUpperPipe } from './Pipelines/frirst-lat-upper.pipe';
+import { AlertsComponent } from './Components/alerts/alerts.component';
+import { WeatherWidgetMapComponent } from './Pages/weather-widget-map/weather-widget-map.component';
+import { WeatherDataMapComponent } from './Components/weather-data-map/weather-data-map.component';
+import { WeatherAdditionalDataComponent } from '../app/Components/weather-additional-data/weather-additional-data.component';
+import { CityMapComponent } from './Components/city-map/city-map.component';
 
 
 @NgModule({

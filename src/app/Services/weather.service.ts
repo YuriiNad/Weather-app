@@ -3,9 +3,9 @@ import { catchError } from 'rxjs/operators';
 import { map } from 'rxjs/operators';
 
 import {  HttpClient} from '@angular/common/http';
-import { WeatherItem } from './weather-item';
+import { WeatherItem } from '../weather-item';
 
-import { AlertsComponent } from './alerts/alerts.component'
+import { AlertsComponent } from '../Components/alerts/alerts.component'
 
 @Injectable({
   providedIn: 'root'
