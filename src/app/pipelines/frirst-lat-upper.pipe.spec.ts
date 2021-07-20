@@ -4,5 +4,5 @@ describe('FrirstLatUpperPipe', () => {
   it('create an instance', () => {
     const pipe = new FrirstLatUpperPipe();
     expect(pipe).toBeTruthy();
-  });
+  }); 
 });

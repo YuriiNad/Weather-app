@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { WeatherDataMapComponent } from './weather-data-map.component';
 
 describe('WeatherDataMapComponent', () => {

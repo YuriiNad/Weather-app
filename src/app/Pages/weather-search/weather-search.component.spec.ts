@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { WeatherSearchComponent } from './weather-search.component';
 
 describe('WeatherSearchComponent', () => {

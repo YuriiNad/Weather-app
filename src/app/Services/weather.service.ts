@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
+import { HttpClient} from '@angular/common/http';
+
 import { catchError } from 'rxjs/operators';
 import { map } from 'rxjs/operators';
 
-import {  HttpClient} from '@angular/common/http';
 import { WeatherItem } from '../weather-item';
-
 import { AlertsComponent } from '../Components/alerts/alerts.component'
 
 @Injectable({
@@ -45,9 +45,9 @@ export class WeatherService {
 
   get currentWeather() {
     return this.currentCityWeather;
-  }
+  };
 
   getAlert():void {
     this._alerts.erroalert();
-  }
+  };
 }
